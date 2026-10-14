@@ -76,7 +76,7 @@ def eval_model(model, X_test, y_test):
 
     # plot ROC curve
     fpr, tpr, thresholds = roc_curve(y_test, y_scores[:,1])
-    fig = plt.figure(figsize=(6, 4))
+    fig = plt.figure(figsize=(5, 4))
     # Plot the diagonal 50% line
     plt.plot([0, 1], [0, 1], 'k--')
     # Plot the FPR and TPR achieved by our model
